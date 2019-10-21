@@ -1,4 +1,4 @@
-import "./style.css";
+import "./style.scss";
 import axios from "axios";
 
 //c64731f496mshe51e815d217b33cp11abedjsn1edda6af55db
