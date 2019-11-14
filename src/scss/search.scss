@@ -1,15 +1,18 @@
 .header {
     grid-area: head;
-    background-color: #f9f5f3;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: rgba(0, 0, 0, 0) url("./img/img1.jpg") repeat scroll bottom center;
+    background-size: cover;
 
     &__logo {
-        margin-left: 4rem;
         height: 4.5rem;
         display: flex;
         align-items: center;
+        color: #fff;
+        text-transform: uppercase;
+        text-shadow: 4px 4px 12px rgba(0, 0, 0, 1);
     }
 
     .search {
@@ -19,6 +22,8 @@
         align-items: center;
         padding-left: 3rem;
         transition: all 0.3s;
+        text-shadow: 4px 4px 12px rgba(0, 0, 0, 1);
+
 
         &:focus-within {
             transform: translateY(-2px);
@@ -31,14 +36,15 @@
             font-family: inherit;
             color: inherit;
             font-size: 1.7rem;
-            width: 30rem;
+            width: 40rem;
 
             &:focus {
                 outline: none;
             }
 
             &::placeholder {
-                color: #dad0cc;
+                color: #dbd4d4;
+
             }
         }
     }

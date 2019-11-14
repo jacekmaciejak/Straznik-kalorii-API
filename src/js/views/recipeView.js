@@ -30,7 +30,7 @@ const formatCount = count => {
 const createIngredient = ingredient => `
                     <li class="recipe__item">
                         <svg class="recipe__icon">
-                            <use href="img/icons.svg#icon-check"></use>
+                            <use href="src/img/icons.svg#icon-check"></use>
                         </svg>
                         <div class="recipe__count">${formatCount(
                           ingredient.count
@@ -55,7 +55,7 @@ export const renderRecipe = (recipe, isLiked) => {
             <div class="recipe__details">
                 <div class="recipe__info">
                     <svg class="recipe__info-icon">
-                        <use href="img/icons.svg#icon-stopwatch"></use>
+                        <use href="src/img/icons.svg#icon-stopwatch"></use>
                     </svg>
                     <span class="recipe__info-data recipe__info-data--minutes">${
                       recipe.time
@@ -64,7 +64,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 </div>
                 <div class="recipe__info">
                     <svg class="recipe__info-icon">
-                        <use href="img/icons.svg#icon-man"></use>
+                        <use href="src/img/icons.svg#icon-man"></use>
                     </svg>
                     <span class="recipe__info-data recipe__info-data--people">${
                       recipe.servings
@@ -74,12 +74,12 @@ export const renderRecipe = (recipe, isLiked) => {
                     <div class="recipe__info-buttons">
                         <button class="btn-tiny btn-decrease">
                             <svg>
-                                <use href="img/icons.svg#icon-circle-with-minus"></use>
+                                <use href="src/img/icons.svg#icon-circle-with-minus"></use>
                             </svg>
                         </button>
                         <button class="btn-tiny btn-increase">
                             <svg>
-                                <use href="img/icons.svg#icon-circle-with-plus"></use>
+                                <use href="src/img/icons.svg#icon-circle-with-plus"></use>
                             </svg>
                         </button>
                     </div>
@@ -87,7 +87,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 </div>
                 <button class="recipe__love">
                     <svg class="header__likes">
-                        <use href="img/icons.svg#icon-heart${
+                        <use href="src/img/icons.svg#icon-heart${
                           isLiked ? "" : "-outlined"
                         }"></use>
                     </svg>
@@ -100,7 +100,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 </ul>
                 <button class="btn-small recipe__btn recipe__btn--add">
                     <svg class="search__icon">
-                        <use href="img/icons.svg#icon-shopping-cart"></use>
+                        <use href="src/img/icons.svg#icon-shopping-cart"></use>
                     </svg>
                     <span>Add to shopping list</span>
                 </button>
@@ -119,7 +119,7 @@ export const renderRecipe = (recipe, isLiked) => {
                 }" target="_blank">
                     <span>Directions</span>
                     <svg class="search__icon">
-                        <use href="img/icons.svg#icon-triangle-right"></use>
+                        <use href="src/img/icons.svg#icon-triangle-right"></use>
                     </svg>
                 </a>
             </div>
