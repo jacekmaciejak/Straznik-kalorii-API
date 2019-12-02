@@ -7,7 +7,7 @@ export default class Search {
     this.query = query;
   }
   //------------- 1 -------------------
-  async getResault() {
+  async getResults() {
     //try - catch, wyswietli blad jesli jest zle zapytanie
     try {
       const res = await axios(

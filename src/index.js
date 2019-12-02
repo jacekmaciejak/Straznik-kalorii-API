@@ -1,7 +1,5 @@
 import "./main.scss";
-
 import Search from "./js/models/Search";
-
 import Recipe from "./js/models/Recipe";
 import List from "./js/models/List";
 import Likes from "./js/models/Likes";
@@ -11,12 +9,6 @@ import * as listView from "./js/views/listView";
 import * as likesView from "./js/views/likesView";
 import { elements, renderLoader, clearLoader } from "./js/views/base";
 
-/**Global state of the app
- * -Search object
- * -Current recipe object
- * -Shopping list object
- * -Liked recipes
- */
 //------------- 4 ---------------
 const state = {};
 //----------SEARCH CONTROLLER---------
@@ -33,7 +25,7 @@ const controlSearch = async () => {
     renderLoader(elements.searchRes); //wywolanie funkcji loadera
     try {
       //4)Search for recipes
-      await state.search.getResault();
+      await state.search.getResults();
       //5)Render results on UI
       clearLoader();
       searchView.renderResults(state.search.result);

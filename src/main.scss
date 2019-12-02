@@ -1,4 +1,5 @@
 @import"scss/search.scss";
+@import"scss/products.scss";
 
 * {
     margin: 0;
@@ -244,13 +245,10 @@ body {
     text-decoration: none;
 }
 
-.results__link:hover {
-    background-color: #f9f5f3;
-    transform: translateY(-2px);
-}
-
+.results__link:hover,
 .results__link--active {
-    background-color: #f9f5f3;
+    background-color: rgba(183, 237, 249, 1);
+    // transform: translateY(-2px);
 }
 
 .results__fig {
@@ -326,21 +324,21 @@ body {
 .recipe__fig {
     height: 30rem;
     position: relative;
-    transform: scale(1.04) translateY(-1px);
-    transform-origin: top;
+    // transform: scale(1.04) translateY(-1px);
+    // transform-origin: top;
 }
 
-.recipe__fig::before {
-    content: "";
-    display: block;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
-    opacity: 0.6;
-}
+// .recipe__fig::before {
+//     content: "";
+//     display: block;
+//     height: 100%;
+//     width: 100%;
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     background-image: linear-gradient(to right bottom, #fbdb89, #f48982);
+//     opacity: 0.6;
+// }
 
 .recipe__img {
     width: 100%;

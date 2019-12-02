@@ -8,7 +8,7 @@ export const clearInput = () => {
 };
 export const clearResult = () => {
   elements.searchResList.innerHTML = ""; //czyszczenie pola z wynikami wyszukiwania
-  elements.searchResPages.innerHTML = ""; //czyszczenie polaz przyciskami, dodaje nowe przyciski
+  elements.searchResPages.innerHTML = ""; //czyszczenie pola z przyciskami, dodaje nowe przyciski
 };
 
 //podswiatlanie przepisu po zaznaczeniu
@@ -67,7 +67,7 @@ const createButton = (page, type) => `
 }>
 <span>Page ${type === "prev" ? page - 1 : page + 1}</span>
                     <svg class="search__icon">
-                        <use href="img/icons.svg#icon-triangle-${
+                        <use href="src/img/icons.svg#icon-triangle-${
                           type === "prev" ? "left" : "right"
                         }"></use>
                     </svg>
